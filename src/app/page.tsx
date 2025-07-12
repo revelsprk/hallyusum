@@ -1,20 +1,17 @@
-import Header from "@/components/Header";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
-      <Header />
-      <div className="md:container md:mx-auto mx-4 my-8">
-        <div className="relative">
-          <img src="diva.jpg" className="rounded-lg w-full h-[512px] object-cover object-center md:h-auto" />
-          <div className="absolute inset-0 flex items-start justify-center mt-8">
-            <input
-              type="text"
-              placeholder="Search for songs..."
-              className="placeholder:text-sm bg-white border px-4 py-2 rounded-lg outline-none shadow-md w-3/4 md:w-1/4"
-            />
-          </div>
-        </div>
+    <div className="relative w-full min-h-screen">
+      {/* 背景画像 */}
+      <Image src="/bg.png" alt="Background" fill className="object-cover object-center" priority />
+
+      {/* 半透明背景+ぼかし */}
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+
+      <div className="absolute inset-0 flex flex-col items-center justify-center mb-8 p-2 md:p-0">
+        <Image src="/logo.svg" alt="Hallyu Sum" width={100} height={100} className="w-3/4 md:h-24 md:w-full mb-2 md:mb-4" />
+        <input type="text" placeholder="Search for songs..." className="placeholder:text-sm bg-white border px-4 py-2 rounded-lg outline-none shadow-md w-full md:w-1/3" />
       </div>
     </div>
   );
