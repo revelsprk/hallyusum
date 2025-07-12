@@ -9,9 +9,10 @@ export default function Home() {
       {/* 半透明背景+ぼかし */}
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
 
-      <div className="absolute inset-0 flex flex-col items-center justify-center mb-8 p-2 md:p-0">
-        <Image src="/logo.svg" alt="Hallyu Sum" width={100} height={100} className="w-3/4 md:w-1/4 mb-2 md:mb-4" />
-        <input type="text" placeholder="Search for songs..." className="placeholder:text-sm bg-white border px-4 py-2 rounded-lg outline-none shadow-md w-full md:w-1/3" />
+      <div className="absolute inset-0 flex flex-col items-center justify-center mb-8">
+        <Image src="/logo.svg" alt="Hallyu Sum" width={100} height={100} className="w-3/4 md:w-1/4 mb-2" />
+        <p className="w-3/4 md:w-1/4 mb-4 text-white/80 italic">Instantly check MV view counts and rankings, all in one place.</p>
+        <input type="text" placeholder="Who’s topping the charts?" className="placeholder:text-sm bg-white border px-4 py-2 rounded-lg outline-none shadow-md w-full md:w-1/3 mx-4 md:mx-0" />
       </div>
     </div>
   );

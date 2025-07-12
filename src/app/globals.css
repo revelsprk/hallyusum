@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #fff;
+  --background: #1f2937;
   --foreground: #1f2937;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "TikTok Sans", Arial, Helvetica, sans-serif;
 }
